@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>مبروك الليسن 🎀🚗</title>
+<meta name="theme-color" content="#C6127A">
+<meta name="description" content="مفاجأة مبروك الليسن لباربي">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen" class="start-screen">
+  <div class="start-glow"></div>
+  <div class="start-content">
+    <div class="start-emoji">🎀</div>
+    <h1 class="start-title">مفاجأة خاصة</h1>
+    <p class="start-sub">فيه شي حلو بانتظارج... جهزي الصوت 🔊</p>
+    <button id="startBtn" class="start-btn">
+      <span class="btn-icon">🚗</span>
+      <span>ابدأي المفاجأة</span>
+    </button>
+  </div>
+  <div class="start-sparkle s1">✦</div>
+  <div class="start-sparkle s2">✧</div>
+  <div class="start-sparkle s3">✦</div>
+  <div class="start-sparkle s4">✧</div>
+</div>
+
+<!-- MAIN EXPERIENCE -->
+<div class="page">
+
+  <section class="hero">
+
+    <button id="musicToggle" class="music-toggle" aria-label="كتم/تشغيل الموسيقى" aria-hidden="true">🔇</button>
+
+    <main id="stage" class="stage" aria-hidden="true">
+
+      <video
+        id="bgVideo"
+        class="bg-video"
+        src="assets/barbie-driving.mp4"
+        playsinline
+        webkit-playsinline
+        preload="auto"
+      ></video>
+
+      <canvas id="freezeCanvas" class="freeze-canvas"></canvas>
+
+      <div id="vignette" class="vignette"></div>
+
+      <canvas id="sparkleCanvas" class="sparkle-canvas"></canvas>
+
+      <!-- Breaking news banner -->
+      <div id="newsBanner" class="news-banner">
+        <div class="news-tag">🚨 BREAKING NEWS 🚨</div>
+        <div class="news-track">
+          <span>Barbie has officially got her license! 🎀🚗&nbsp; &nbsp; &nbsp; &nbsp;</span>
+          <span>Barbie has officially got her license! 🎀🚗&nbsp; &nbsp; &nbsp; &nbsp;</span>
+        </div>
+      </div>
+
+      <!-- Congratulation card -->
+      <div id="popup" class="popup-wrap">
+        <div class="popup-card">
+          <div class="card-shine"></div>
+          <div class="ribbon">🎀</div>
+          <p class="popup-message" dir="rtl" lang="ar">
+            مبرووك الليسن هنود 🎀🚗💗<br>
+            خلاص صرتي السواقه الرسمية 😂✨<br>
+            الله يحفظج في كل درب 🤍
+          </p>
+          <div class="popup-icons">🚗 💗 🎀 ✨</div>
+          <button id="replayBtn" class="replay-btn">إعادة المفاجأة 🔁</button>
+        </div>
+      </div>
+
+    </main>
+
+  </section>
+
+  <!-- Bottom breaking news section -->
+  <section class="bottom-news" aria-label="Breaking news">
+    <div class="bottom-news-inner">
+      <div class="bn-eyebrow">
+        <span class="bn-dot">●</span> BREAKING NEWS <span class="bn-dot">●</span>
+      </div>
+      <p class="bn-headline">Barbie has officially got her license! <span class="bn-icons">🎀🚗</span></p>
+      <p class="bn-sub" dir="rtl" lang="ar">هنوده السواقة اليديدة على الطريق</p>
+    </div>
+  </section>
+
+  <audio id="bgMusic" src="assets/bg-music.mp3" loop preload="auto"></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
